@@ -1,0 +1,59 @@
+@media (min-width: 400px) and (max-width: 600px){
+    
+    .output,
+    .input {
+        width: 50%;
+    }
+
+    .grid_container {
+        height: 90%;
+        
+    }
+
+    .number,
+    .del,
+    .reset,
+    .equals {
+        height: 90%;
+    }
+
+    
+}
+
+@media (min-width: 601px) {
+    .output,
+    .input {
+        width: 40%;
+    }
+
+    .grid_container {
+        height: 90%;
+        
+    }
+
+    .number,
+    .del,
+    .reset,
+    .equals {
+        height: 90%;
+    }
+}
+
+@media (min-width: 850px) {
+    .output,
+    .input {
+        width: 33%;
+    }
+
+    .grid_container {
+        height: 90%;
+        
+    }
+
+    .number,
+    .del,
+    .reset,
+    .equals {
+        height: 90%;
+    }
+}

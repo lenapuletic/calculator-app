@@ -1,0 +1,203 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@700&family=Poppins:wght@300;400;500&display=swap');
+
+/* GENERAL STYLING*/
+
+body {
+    height: 100vh;
+    margin: 0;
+    background-color: hsl(222, 26%, 31%);
+    color: hsl(0, 0%, 100%);
+    font-family: 'League Spartan', sans-serif;
+}
+
+/* NAVBAR */
+
+.navbar {
+    height: 15vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.calc {
+    font-size: 35px;
+}
+
+.theme {
+    display: flex;
+    gap: 1rem;
+    align-items: flex-end;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size: 12px;
+}
+
+.theme_numbers {
+    display: flex;
+    justify-content: space-around;
+}
+
+/* TOGGLE SWITCH */
+/* The switch - the box around the slider */
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 75px;
+    height: 25px;
+  }
+  
+  /* Hide default HTML checkbox */
+  .switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  /* The slider */
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: hsl(223, 31%, 20%);
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 16px;
+    width: 16px;
+    left: 5px;
+    bottom: 5px;
+    background-color: hsl(6, 63%, 50%);
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  input:checked + .slider {
+    background-color: #2196F3; /*mislim da se ovo menja s temom*/
+  }
+  
+  input:focus + .slider {
+    box-shadow: 0 0 1px hsl(30, 25%, 89%); 
+  }
+  
+  input:checked + .slider:before {
+    /*-webkit-transform: translateX(50px);
+    -ms-transform: translateX(50px);*/
+    transform: translateX(50px);
+  }
+  
+  /* Rounded sliders */
+  .slider.round {
+    border-radius: 34px;
+  }
+  
+  .slider.round:before {
+    border-radius: 50%;
+  }
+
+
+
+/* MAIN */
+.main_container {
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 1.5rem;
+    font-size: 32px;
+}
+
+.output {
+    width: 80%;
+    height: 15%;
+    background-color: hsl(224, 36%, 15%);
+    border-radius: 10px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+#output_container {
+    padding: 0 1rem; /*da li je neophodno?*/
+
+}
+
+.input {
+    width: 80%;
+    height: 73%;
+    background-color: hsl(223, 31%, 20%);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+.grid_container {
+    padding:  0 1rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    align-items: center;
+}
+
+.number {
+    margin: 0.2rem;
+    height: 17vw;
+    text-align: center;
+    color: hsl(221, 14%, 31%);
+    background-color: hsl(30, 25%, 89%);
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.number:hover,
+.del:hover,
+.equals:hover {
+    cursor: pointer;
+}
+
+.del,
+.reset {
+    background-color: hsl(225, 21%, 49%);
+    font-size: 22px;
+}
+
+.equals {
+    background-color: hsl(6, 63%, 50%);
+    grid-column: span 2;
+}
+.reset {
+    grid-column: span 2;
+}
+
+.del,
+.reset,
+.equals {
+    margin: 0.2rem;    
+    height: 17vw;
+    color: hsl(0, 0%, 100%);
+    text-align: center;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* FOOTER */
+.attribution { 
+    font-size: 11px; text-align: center; 
+    
+}
+.attribution a { 
+    color: hsl(0, 0%, 100%); 
+}
+  
