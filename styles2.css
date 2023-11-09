@@ -5,8 +5,8 @@
 body {
     height: 100vh;
     margin: 0;
-    background-color: hsl(222, 26%, 31%);
-    color: hsl(0, 0%, 100%);
+    background-color: hsl(0, 0%, 90%);
+    color: hsl(60, 10%, 19%);
     font-family: 'League Spartan', sans-serif;
 }
 
@@ -61,9 +61,10 @@ body {
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: hsl(223, 31%, 20%);
+    background-color: hsl(0, 5%, 81%);
     -webkit-transition: .4s;
     transition: .4s;
+    
   }
   
   .slider:before {
@@ -73,14 +74,18 @@ body {
     width: 16px;
     left: 10px;
     bottom: 5px;
-    background-color: hsl(6, 63%, 50%);
+    background-color: hsl(25, 98%, 40%);
     -webkit-transition: .4s;
     transition: .4s;
+    -webkit-transform: translateX(19px);
+    -ms-transform: translateX(19px);
+    transform: translateX(19px);
   }
 
   input:focus + .slider {
     box-shadow: 0 0 1px hsl(30, 25%, 89%); 
   }
+  
   
   /* Rounded sliders */
   .slider.round {
@@ -91,7 +96,9 @@ body {
     border-radius: 50%;
   }
 
+
 /* MAIN */
+
 .main_container {
     height: 80%;
     display: flex;
@@ -105,13 +112,13 @@ body {
 .output {
     width: 75%;
     height: 15%;
-    background-color: hsl(224, 36%, 15%);
+    background-color: hsl(0, 0%, 93%);
     border-radius: 10px;
     display: flex;
     justify-content: flex-end;
     align-items: center;
     border: none;
-    color: hsl(0, 0%, 100%);
+    color: hsl(60, 10%, 19%);
     font-size: 32px;
     font-family: 'League Spartan', sans-serif;
     text-align: right;
@@ -122,17 +129,14 @@ body {
     padding-right: 1rem;
 }
 
-
-
 .input {
     width: 80%;
     height: 73%;
-    background-color: hsl(223, 31%, 20%);
+    background-color: hsl(0, 5%, 81%);
     border-radius: 10px;
     display: flex;
     flex-direction: column;
     justify-content: center;
-
 }
 
 .grid_container {
@@ -146,7 +150,7 @@ body {
     margin: 0.2rem;
     height: 17vw;
     text-align: center;
-    color: hsl(221, 14%, 31%);
+    color: hsl(60, 10%, 19%);
     background-color: hsl(30, 25%, 89%);
     border-radius: 5px;
     display: flex;
@@ -162,12 +166,12 @@ body {
 
 .del,
 .reset {
-    background-color: hsl(225, 21%, 49%);
+    background-color: hsl(185, 42%, 37%);
     font-size: 22px;
 }
 
 .equals {
-    background-color: hsl(6, 63%, 50%);
+    background-color: hsl(25, 98%, 40%);
     grid-column: span 2;
 }
 .reset {
@@ -195,7 +199,7 @@ body {
     
 }
 .footer-links { 
-    color: hsl(0, 0%, 100%); 
+    color: hsl(221, 14%, 31%); 
 }
   
 

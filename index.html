@@ -2,10 +2,10 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <title>Calculator App</title>
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="styles.css" id="theme">
   <link rel="stylesheet" href="mediaqueries.css">
 </head>
 <body>
@@ -19,10 +19,11 @@
         <div class="theme_numbers">
           <div>1</div>
           <div>2</div>
+          <div>3</div>
         </div>
-        <label class="switch" onclick="switchThemes()">
+        <label class="switch">
           <input type="checkbox">
-          <span class="slider round"></span>
+          <span class="slider round" onclick="setTheme()"></span>
         </label>
       </div>
     </div>
@@ -70,6 +71,7 @@
     Coded by <a href="https://lenapuletic.github.io/" target="_blank" class="footer-links">Lena Puletic</a>
   </div>
   <script src="script.js"></script>
+  <script src="theme.js"></script>
 </body>
 
 </html>
