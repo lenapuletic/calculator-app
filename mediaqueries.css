@@ -1,8 +1,8 @@
-@media (min-width: 400px) and (max-width: 600px){
+@media (min-width: 380px) and (max-width: 600px){
     
     .output,
     .input {
-        width: 50%;
+        width: 60%;
     }
 
     .grid_container {
