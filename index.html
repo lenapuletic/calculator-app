@@ -19,9 +19,8 @@
         <div class="theme_numbers">
           <div>1</div>
           <div>2</div>
-          <div>3</div>
         </div>
-        <label class="switch">
+        <label class="switch" onclick="switchThemes()">
           <input type="checkbox">
           <span class="slider round"></span>
         </label>
@@ -33,44 +32,44 @@
   <div class="main_container">
     <!-- OUTPUT AREA -->
     <div class="output">
-      <div id="output_container">
-        000,000
-      </div>
+      <input type="text" class="output" id="display" disabled>
+
     </div>
     <!-- INPUT AREA -->
     <div class="input">
       <div class="grid_container">
-        <div class="number">7</div>
-        <div class="number">8</div>
-        <div class="number">9</div>
-        <div class="del">DEL</div>
-
-        <div class="number">4</div>
-        <div class="number">5</div>
-        <div class="number">6</div>
-        <div class="number">+</div>
-
-        <div class="number">1</div>
-        <div class="number">2</div>
-        <div class="number">3</div>
-        <div class="number">-</div>
-
-        <div class="number" id="dot">.</div>
-        <div class="number">0</div>
-        <div class="number" id="divide">/</div>
-        <div class="number" id="multiply">x</div>
-
-        <div class="reset" id="reset">RESET</div>
-        <div class="equals" id="equals">=</div>
+        <div class="number key" onclick="appendToDisplay('7')">7</div>
+        <div class="number key" onclick="appendToDisplay('8')">8</div>
+        <div class="number key" onclick="appendToDisplay('9')">9</div>
+        <div class="del key" onclick="clearDisplay()">DEL</div>
+    
+        <div class="number key" onclick="appendToDisplay('4')">4</div>
+        <div class="number key" onclick="appendToDisplay('5')">5</div>
+        <div class="number key" onclick="appendToDisplay('6')">6</div>
+        <div class="number key" onclick="appendToDisplay('+')">+</div>
+    
+        <div class="number key" onclick="appendToDisplay('1')">1</div>
+        <div class="number key" onclick="appendToDisplay('2')">2</div>
+        <div class="number key" onclick="appendToDisplay('3')">3</div>
+        <div class="number key" onclick="appendToDisplay('-')">-</div>
+    
+        <div class="number key" id="dot" onclick="appendToDisplay('.')">.</div>
+        <div class="number key" onclick="appendToDisplay('0')">0</div>
+        <div class="number key" id="divide" onclick="appendToDisplay('/')">/</div>
+        <div class="number key" id="multiply" onclick="appendToDisplay('*')">x</div>
+    
+        <div class="reset key" id="reset" onclick="clearDisplay()">RESET</div>
+        <div class="equals key" id="equals" onclick="calculateResult()">=</div>
       </div>
     </div>
   </div>
 
   
   <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="https://lenapuletic.github.io/" target="_blank">Lena Puletic</a>
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank" class="footer-links">Frontend Mentor</a>. 
+    Coded by <a href="https://lenapuletic.github.io/" target="_blank" class="footer-links">Lena Puletic</a>
   </div>
   <script src="script.js"></script>
 </body>
+
 </html>
