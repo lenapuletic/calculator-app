@@ -112,7 +112,7 @@ body {
 .output {
     width: 75%;
     height: 15%;
-    background-color: hsl(0, 0%, 93%);
+    background-color: hsl(0, 5%, 81%);
     border-radius: 10px;
     display: flex;
     justify-content: flex-end;

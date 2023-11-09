@@ -20,3 +20,15 @@ function calculateResult() {
         equation = "";
     }
 }
+
+function deleteLastCharacter() {
+    if (equation.length === 0) {
+      // Handle invalid input or an empty string.
+      return equation;
+    }
+  
+    // Use the slice method to create a new string without the last character.
+    equation = equation.slice(0, -1);
+  
+    display.value = equation;
+  }
